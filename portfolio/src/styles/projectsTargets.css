@@ -1,0 +1,103 @@
+/* Tarjeta */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #252526;
+  border: 2px solid #00bfff;
+  border-radius: 1em;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 800px;
+  gap: 1.5em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 0.5em;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: #00bfff;
+  margin-bottom: 1em;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  flex-grow: 1;
+}
+
+.project-card-links {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.project-card a {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.project-card a:first-of-type {
+  background: #00bfff;
+  color: #1e1e1e;
+}
+
+.project-card a:first-of-type:hover {
+  background: #009acd;
+}
+
+.project-card a:last-of-type {
+  border: 2px solid #00bfff;
+  color: #00bfff;
+}
+
+.project-card a:last-of-type:hover {
+  background: #00bfff;
+  color: #1e1e1e;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-card-links {
+    justify-content: center;
+  }
+}
