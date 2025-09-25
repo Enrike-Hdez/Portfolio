@@ -6,7 +6,7 @@ export default function AboutMe() {
       <h1>About Me</h1>
       <div className="about-container">
         <div className="about-image">
-          <img src="/public/imgs/me.jpg" alt="Enrique's picture" />
+          <img src="../public/imgs/me.jpg" alt="Enrique's picture" />
         </div>
         <div className="about-text">
           <p>
@@ -31,7 +31,7 @@ export default function AboutMe() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./public/imgs/github.png" alt="GitHub" />
+                <img src="../public/imgs/github.png" alt="GitHub" />
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ export default function AboutMe() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./public/imgs/mail.png" alt="Gmail" />
+                <img src="../public/imgs/mail.png" alt="Gmail" />
               </a>
             </li>
           </ul>

@@ -8,15 +8,15 @@ export default function Sidebar (){
 		<div className="sidebar">
 			<nav className="links">
 				<Link to="/" className="sidebar-link">
-					<img src="./public/imgs/home.svg" alt="Home" className="sidebar-icon" />
+					<img src="../public/imgs/home.svg" alt="Home" className="sidebar-icon" />
 					Home
 				</Link>
 				<Link to="/projects" className="sidebar-link">
-					<img src="./public/imgs/projects.svg" alt="Projects" className="sidebar-icon" />
+					<img src="../public/imgs/projects.svg" alt="Projects" className="sidebar-icon" />
 					Projects
 				</Link>
 				<Link to="/about-me" className="sidebar-link">
-					<img src="./public/imgs/about-me.svg" alt="About Me" className="sidebar-icon" />
+					<img src="../public/imgs/about-me.svg" alt="About Me" className="sidebar-icon" />
 					About Me
 				</Link>
 			</nav>
