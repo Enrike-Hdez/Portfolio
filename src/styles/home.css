@@ -1,0 +1,57 @@
+.home {
+  min-height: 90vh;
+  background: #1e1e1e; /* Fondo oscuro */
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;  /* centra horizontal */
+  align-items: center;      /* centra vertical */
+  padding: 2em;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;   /* apila h1 y p en columna */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3em 4em;
+  border-radius: 1em;
+  background: #252526; /* Caja un poco más clara */
+  max-width: 700px;
+  position: relative;
+  overflow: hidden;
+
+  /* Borde degradado estándar */
+  border: 3px solid #00bfff;
+
+  /* Animación al hacer hover */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: url('/images/tu-imagen.jpg') center/cover no-repeat;
+  opacity: 0.15;
+  border-radius: 1em;
+}
+
+.home-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+}
+
+.home h1 {
+  font-size: 3rem;
+  color: #00bfff;
+  margin-bottom: 0.5em;
+}
+
+.home p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #dcdcdc;
+}

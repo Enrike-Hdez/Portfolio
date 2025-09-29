@@ -1,0 +1,116 @@
+.about {
+  width: 100%;
+  max-width: 1000px; /* límite de ancho */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 2em;
+}
+
+.about h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5em;
+  color: #00bfff;
+  text-align: center;
+  border-bottom: 2px solid #00bfff;
+  display: inline-block;
+  padding-bottom: 0.3em;
+}
+
+.about-container {
+  display: flex;
+  gap: 2em;
+  max-width: 900px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bfff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* animación */
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text {
+    margin-top: 1em;
+  }
+}
+
+/* Contact section */
+.contact {
+  margin-top: 4em;
+  padding: 2em;
+  background: #252526;
+  border: 2px solid #00bfff;
+  border-radius: 1em;
+  box-shadow: 0 6px 15px rgba(0, 191, 255, 0.15);
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* animación */
+}
+
+.contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 0.8em;
+}
+
+.contact p {
+  margin-bottom: 1.5em;
+  font-size: 1.1rem;
+  color: #dcdcdc;
+  line-height: 1.5;
+}
+
+.contact nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.8em;
+}
+
+.contact nav ul li a img {
+  width: 35px;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(98%) saturate(2013%) hue-rotate(170deg) brightness(95%) contrast(102%);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.contact nav ul li a img:hover {
+  transform: scale(1.15);
+  filter: brightness(0) saturate(100%) invert(43%) sepia(90%) saturate(3000%) hue-rotate(180deg) brightness(95%) contrast(102%);
+}
