@@ -11,7 +11,7 @@ import AboutMe from './pages/AboutMe';
 function App() {
 
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <Sidebar/>
       <main>
         <Routes>
